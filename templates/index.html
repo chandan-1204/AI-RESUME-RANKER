@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Resume Ranker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 AI Resume Ranker</h1>
+    <p class="subtitle">Smartly rank resumes using AI & NLP</p>
+
+    <form method="POST" enctype="multipart/form-data" class="card">
+        <label>📄 Job Description</label>
+        <textarea name="job_desc" placeholder="Paste job description here..." required></textarea>
+
+        <label>📎 Upload Resumes (PDF)</label>
+        <input type="file" name="resumes" multiple required>
+
+        <button type="submit">Rank Resumes</button>
+    </form>
+
+    {% if ranked %}
+    <div class="results">
+        <h2>🏆 Ranking Results</h2>
+        {% for name, score, skills in ranked %}
+        <div class="result-card">
+            <span class="file-name">{{ name }}</span>
+            <span class="score">{{ "%.2f"|format(score) }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+
+<footer>
+    Built by CHANDAN using AI & NLP
+</footer>
+
+</body>
+</html>
