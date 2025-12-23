@@ -66,8 +66,7 @@ resume_ranker/
 ## ⚙ Installation & Setup
 
 ### Step 1: Clone the Repository
-
-cd ai-resume-ranker
+https://github.com/chandan-1204/AI-RESUME-RANKER.git
 
 ### Step 2: Create Virtual Environment (Optional)
 python -m venv venv
@@ -134,11 +133,12 @@ Machine Learning, NLP, Deep Learning, Flask, and data analysis.
 ## 👨‍💻 Author
 
 CHANDAN P R 
-B.E IN COMPUTER SCIENCE ENGINEERING (AI ML) 
-AI / ML Internship Project  
+- B.E IN COMPUTER SCIENCE ENGINEERING (AI ML) 
+- AI / ML Internship Project  
 
 ---
 
 ## 📜 License
 
 This project is for educational and academic purposes only.
+
